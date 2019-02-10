@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LightingControl</string>
+    <string name="lightSearch_name">Light Search</string>
+    <string name="activityTest_color">Color</string>
+    <string name="mainActivity_name">Home</string>
+    <string name="testActivity_name">Light Control</string>
+    <string name="main_seeLights_name">Lights</string>
+    <string name="main_searchLights_name">Search</string>
+    <string name="menu_activate_light">Activate Light</string>
+    <string name="action_activate">Activate</string>
+    <string name="light_activation_ssid">SSID</string>
+    <string name="light_activation_password">Password</string>
+    <string name="light_activation_howto_text">HowTo</string>
+    <string name="light_activation_introduction">Light activation introduction</string>
+    <string name="light_search_introduction">Light search introduction</string>
+    <string name="light_colorchange_red">RED</string>
+    <string name="light_colorchange_green">GREEN</string>
+    <string name="light_colorchange_blue">BLUE</string>
+    <string name="light_colorchange_brightness">BRIGHTNESS</string>
+    <string name="light_colorchange_color">0,0,0</string>
+    <string name="light_colorchange_ip">IP</string>
+    <string name="light_edit_name">Name</string>
+    <string name="light_edit_ip">IP</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="light_item_name">Light Name</string>
+    <string name="action_edit">Edit</string>
+    <string name="menu_about">About</string>
+</resources>
