@@ -25,7 +25,7 @@ Then, add and install the ESP8266 Arduino core. Install instructions can be foun
 
 Adjust the settings of your Arduino IDE as depicted in the following image:
 
-![ArduinoSettings](WikiImages/ArduinoSettings.png)
+![ArduinoSettings](WikiImages/ArduinoSettings.PNG)
 
 To find out which Port to use, go into your Device-Manager and expand the `COM & LPT` section. Then plug in your ESP device and see which COM Port ist assigned to it. In the following gif you see that my ESP got assigned the COM Port 4, so I chose COM4 in my Arduino IDE settings.
 
