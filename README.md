@@ -14,8 +14,8 @@ git clone https://github.com/Chrizey91/LightControl.git
 ```
 As this project consists of two parts (the Android app and the Arduino firmware) there are two things you need to install if you want to get the full experience.
 
-## Arduino firmware
-To install the Arduino firmware, you need to have the Arduino IDE installed. 
+## ESP firmware
+To install the ESP firmware, you need to have the Arduino IDE installed. 
 
 So first, download and install the latest version of the Arduino IDE from the official Ardiono website [here](https://www.arduino.cc/en/Main/Software). This thing is like Eclipse or IntelliJ. You will code your firmware in here.
 
@@ -49,7 +49,7 @@ For the documentation please consider looking at the Wiki
 
 I am happy to accept any help in any form. The best way to contribute right now is to look at the issues or maybe even write to me dirictly. It is just a small project, so I will probably answer. :)
 
-## Arduino firmware
+## ESP firmware
 
 My knowledge about firmware programming is very limited (yet). So any help here is appreciated.
 
