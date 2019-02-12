@@ -12,7 +12,7 @@ First things first: Clone the repository:
 ```sh
 git clone https://github.com/Chrizey91/LightControl.git
 ```
-As this project consists of two parts (the Android app and the Arduino firmware) there are two things you need to install if you want to get the full experience.
+As this project consists of two parts (the Android app and the ESP firmware) there are two things you need to install if you want to get the full experience.
 
 ## ESP firmware
 To install the ESP firmware, you need to have the Arduino IDE installed. 
@@ -35,7 +35,7 @@ Now simply put your ESP into flashing-mode and upload your sketch to it.
 
 ## Android app
 
-Download and install [Android Studio](https://developer.android.com/studio/).
+Download and install [Android Studio](https://developer.android.com/studio/). Apparently, downloading project into a Dropbox-folder causes problems with Arduino Studio. So try to avoid that.
 
 Connect your android device with active developer mode to you PC.
 
