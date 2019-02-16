@@ -2,7 +2,7 @@
 An easy to use smart light bundle with an Android app and Arduino firmware
 
 # Hardware
-For the Android app you need an Android device with enabled developer mode. To find out how to do that search for `developer mode <your phone name>` in Google.
+For the Android app you need an Android device with enabled developer mode. To find out how to do that search for `developer mode <your phone name>` in Google (this won't be neccessary in the future).
 
 For the WiFi chip the [ESP-01](https://de.aliexpress.com/item/2015-New-version-1PCS-ESP8266-serial-WIFI-model-ESP-01-Authenticity-Guaranteed-Internet-of-things/32473490612.html?spm=a2g0x.search0604.3.8.57764e91Kf4tD3&s=p&ws_ab_test=searchweb0_0,searchweb201602_2_10065_10068_10547_319_317_10548_10696_10084_453_10083_454_10618_10304_10307_10820_10821_537_10302_536_10902_10843_10059_10884_10887_321_322_10103,searchweb201603_56,ppcSwitch_0&algo_expid=e4b3ea0e-5d82-4207-b919-74437895bfe9-1&algo_pvid=e4b3ea0e-5d82-4207-b919-74437895bfe9&transAbTest=ae803_3) was used in our case. But in theory any WiFi chip that is compatible with the ESP8266 Arduino Core should work.
 
@@ -19,9 +19,9 @@ To install the ESP firmware, you need to have the Arduino IDE installed.
 
 So first, download and install the latest version of the Arduino IDE from the official Ardiono website [here](https://www.arduino.cc/en/Main/Software). This thing is like Eclipse or IntelliJ. You will code your firmware in here.
 
-Then, add and install the ESP8266 Arduino core. Install instructions can be found [here](https://arduino-esp8266.readthedocs.io/en/latest/installing.html). This is a conglomerate of libraries specifically designed for the ESP8266 chip of which we will take heavy use of.
+Then, add and install the ESP8266 Arduino core (at least version 2.5.0). Install instructions can be found [here](https://arduino-esp8266.readthedocs.io/en/latest/installing.html). This is a conglomerate of libraries specifically designed for the ESP8266 chip of which we will take heavy use of.
 
-(Re)start your Arduino IDE and load the firmware called ESP_Firmware.ino, which you will find at `ESP_Firmware\ESP_Firmware.ino`.
+(Re)start your Arduino IDE and choose *Generic ESP8266 Module* under Tools->Board and load the firmware called ESP_Firmware.ino, which you will find at `ESP_Firmware\ESP_Firmware.ino`.
 
 Adjust the settings of your Arduino IDE as depicted in the following image:
 
@@ -35,11 +35,15 @@ Now simply put your ESP into flashing-mode and upload your sketch to it.
 
 ## Android app
 
-Download and install [Android Studio](https://developer.android.com/studio/). Apparently, downloading project into a Dropbox-folder causes problems with Arduino Studio. So try to avoid that.
+In the future you will be able to download and install the apk directly as well as downloading it from the Google Play store.
+
+Download and install [Android Studio](https://developer.android.com/studio/). Apparently, downloading the project into a Dropbox-folder causes problems with Arduino Studio. So try to avoid that.
 
 Connect your android device with active developer mode to you PC.
 
-Open this project in Android Studio, hit run and chose your android device as the output device.
+Open up Android Studio and open this project (select the main folder to open).
+
+You might nicht to clean/rebuild (Build->Clean Project, Build->Rebuild Project) the project or make (Build->Make Project) before running (Green arrow in the upper right) it.
 
 # Documentation
 
