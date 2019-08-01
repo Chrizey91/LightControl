@@ -17,9 +17,20 @@ As this project consists of two parts (the Android app and the ESP firmware) the
 ## ESP firmware
 To install the ESP firmware, you need to have the Arduino IDE installed. 
 
-So first, download and install the latest version of the Arduino IDE from the official Ardiono website [here](https://www.arduino.cc/en/Main/Software). This thing is like Eclipse or IntelliJ. You will code your firmware in here.
+So first, download and install the latest supported version of the Arduino IDE for the ESP from the official Ardiono website [here](https://www.arduino.cc/en/Main/Software). The latest supported version for ESP can be seen [here](https://arduino-esp8266.readthedocs.io/en/2.5.2/installing.html). This thing is like Eclipse or IntelliJ. You will code your firmware in here.
 
-Then, add and install the ESP8266 Arduino core (at least version 2.5.0). Install instructions can be found [here](https://arduino-esp8266.readthedocs.io/en/latest/installing.html). This is a conglomerate of libraries specifically designed for the ESP8266 chip of which we will take heavy use of.
+Then, add and install the ESP8266 Arduino core (at least version 2.5.2). Install instructions can be found [here](https://arduino-esp8266.readthedocs.io/en/latest/installing.html). This is a conglomerate of libraries specifically designed for the ESP8266 chip of which we will take heavy use of.
+
+### Careful if using PUYA-flash memory on the ESP
+*Begin PUYA-fix*
+
+Go into the folder you installed the ESP-library to. The default is at `C:\Users\<User>\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.5.2`. Here, create a file and name it `platform.local.txt`. Then, add the following two lines into that file:
+```
+compiler.c.extra_flags=-DPUYA_SUPPORT=1
+compiler.cpp.extra_flags={compiler.c.extra_flags}
+
+```
+*PUYA-fix end*
 
 (Re)start your Arduino IDE and choose *Generic ESP8266 Module* under Tools->Board and load the firmware called ESP_Firmware.ino, which you will find at `ESP_Firmware\ESP_Firmware.ino`.
 
